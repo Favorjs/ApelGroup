@@ -9,30 +9,20 @@
 		<!-- For Resposive Device -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>ConsultPress - Providing leading Business Solutions</title>
+		<title>Apel - Top Financial Service Company</title>
 
 		<!-- Favicon -->
-		<link rel="apple-touch-icon" sizes="57x57" href="images/fav-icon/apple-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="images/fav-icon/apple-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="images/fav-icon/apple-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="images/fav-icon/apple-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="images/fav-icon/apple-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="images/fav-icon/apple-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="images/fav-icon/apple-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="images/fav-icon/apple-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="images/fav-icon/apple-icon-180x180.png">
-		<link rel="icon" type="image/png" sizes="192x192"  href="images/fav-icon/android-icon-192x192.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="images/fav-icon/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="images/fav-icon/favicon-96x96.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="images/fav-icon/favicon-16x16.png">
+		
+		<!-- <link rel="icon" type="image/png"  href="images/logo/logo-smaller.webp"> -->
 
-
+		<link rel="icon" type="image/png"  href="images/logo/logo.png" style="width: 100%;">
 
 		<!-- Custom Css -->
 		<link rel="stylesheet" type="text/css" href="css/custom/style.css">
 		<link rel="stylesheet" type="text/css" href="css/responsive/responsive.css">
 		<!-- Theme-Color css -->
 		<link rel="stylesheet" id="jssDefault" href="css/custom/color-2.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
 
 
 		<!-- Fixing Internet Explorer ______________________________________-->
@@ -44,7 +34,7 @@
 
 
 	</head>
-	<body class="blog">
+	<body class="home">
 
 		<div class="page_wrapper">
 
@@ -59,48 +49,268 @@
 
         <!-- Header ___________________________________ -->
 
-        <header class="p_color_bg">
-        	<div class="container">
-        		<div class="row">
-	        		<div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 header_left">
-	        			<ul>
-	        				<li><i class="fa fa-map-marker s_color" aria-hidden="true"></i><a href="#">001 Columbus Road, Floor 4, San Francisco CA 9100</a></li>
-	        				<li><i class="fa fa-phone s_color" aria-hidden="true"></i><a href="#">Contact Us! (222) 890 60 3919 </a></li>
-	        				<li><i class="fa fa-clock-o s_color" aria-hidden="true"></i><a href="#"> Mon to Sat : 8.00 - 18.00</a></li>
-	        			</ul>
-	        		</div> <!-- End of .header_left -->
-	        		<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 header_right">
-	        			<ul class="social_icon">
-	        				<li><a href="#" class="tran3s" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-	        				<li><a href="#" class="tran3s" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-	        				<li><a href="#" class="tran3s" title="Goolge-Plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-	        			</ul>
+       
+		<style>
+			.preheader {
+			  background-color: #ffffff; /* Light background color */
+			  padding: 10px 0;
+			  font-size: 1.1vw; /* Adjust the font size */
+			  color: #333; /* Text color */
+			  display:flex;
+			  align-items: center;
+			  justify-content: space-around;
+			  border-bottom: 1px solid #107b5f ; 
+		
+			  /* position: sticky;
+			  top:0;
+			  z-index: 1000; */
+			 
+			  
+			}
+			
+			.preheader .bi {
+			  margin-right: 5px;
+			}
+			
+			.preheader a {
+			  color: #333;
+			  text-decoration: none;
+			}
+			
+			.preheader a:hover {
+			  color: #007bff; /* Change the color on hover */
+			}
+			
+			.preheader span {
+			  margin-right: 15px; /* Space between each item */
+			}
+			
+			.preheader .social-icons a {
+			  font-size: 12px; /* Adjust icon size */
+			  color: #333; /* Icon color */
+			}
+			
+			@media (max-width: 768px) {
+			  .preheader {
+				text-align: center;
+			  }
+			
+			  .preheader .col-md-8, .preheader .col-md-4 {
+				text-align: center;
+				margin-bottom: 10px;
+			  }
+			  .myitems{
+			
+			display:flex;
+			align-items: center;
+			justify-items: center;
+			background-color: azure;
+			
+			  }
+			}
+			
+					</style>
 
-	        			<div id="polyglotLanguageSwitcher">
-							<form action="#">
-								<select id="polyglot-language-options">
-									<option id="en" value="en" selected>English</option>
-									<option id="fr" value="fr">French</option>
-									<option id="de" value="de">German</option>
-									<option id="it" value="it">Italian</option>
-									<option id="es" value="es">Spanish</option>
-								</select>
-							</form>
-						</div> <!-- End #polyglotLanguageSwitcher -->
-	        		</div> <!-- End of .header_right -->
-        		</div>  <!-- End of .row -->
-        	</div> <!-- End of .container -->
-        </header> <!-- End of header -->
+					
+<!-- <style>
+
+s
+	
+	.container {
+	  width: 100%;
+	  transform: scale(0.9);
+	  transform-origin: top center;
+	}
+	
+	
+	</style> -->
+		<style>
+
+			@media (max-width: 768px) {
+					  .secfooter {
+						
+						display: flex;
+						flex-direction: column;
+						
+					  }
+			}
+			
+			@media (max-width: 1200px) {
+					  .secfooter {
+						
+						display: flex;
+						flex-direction: column;
+						
+					  }
+			}
+					</style>
+
+
+
+
+<style>
+
+	.ourBusiness{
+
+width:100%;
+padding-bottom: 8rem;
+padding-top: 8rem;
+place-content: center;
+
+text-align: center;
+
+
+
+
+	}
+	.ourBusinessContent{
+
+width:90%;
+height: 80%;
+
+display: flex;
+margin: auto;
+	}
+
+	.businessCard{
+height:100%;
+width: 20%;
+
+display:flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+span{
+	font-size: 5em;
+	color: #267F34;
+	
+}
+p{
+	font-size: 1.5em;
+	color: black;
+}
+
+
+	}
+	
+	@keyframes animateIconLine {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.businessCard:hover .iconLine {
+  height: .5vh;
+  background-color: #267F34;
+  animation: animateIconLine 0.5s ease-in-out;
+  
+}
+
+.iconLine::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 5%;
+  background-color: #267F34;
+}
+
+.iconLine::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 5%;
+  background-color: #267F34;
+}
+
+.businessCard:hover div {
+margin-bottom: 0.5rem;
+}
+
+.businessHeader{
+	margin: auto;
+width:30%;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-bottom: 4rem;
+
+
+}
+
+
+
+.stubbornLine{
+
+height:.8vh;
+width:10vh;
+background-color: #107b5f;
+margin-top: 0.8rem;
+
+}
+@media (max-width: 768px) {
+					  .ourBusinessContent{
+						
+						display: flex;
+						flex-direction: column;
+						
+						align-items: center;
+						
+					  }
+					  .businessCard{
+
+						margin-top: 1rem;
+						
+					  }
+					  .ourBusiness{
+
+						padding-top: 1rem;
+						padding-bottom: 1rem;
+					  }
+
+			}
+
+
+			
+		
+</style>
+		<div class="preheader">
+
+
+			<!-- Contact Info -->
+		
+			  <span class="myitems"><i class="bi bi-telephone"></i> +234 90 4884 4011</span>
+			  <span class="myitems"><i class="bi bi-envelope"></i> customercare@apelasset.com</span>
+			  <span  class="myitems"><i class="bi bi-geo-alt"></i> 6 Alhaji Bashorun Street, off Norman Williams St, Ikoyi, Lagos</span>
+		
+			<!-- Social Links -->
+			<!-- <div class="col-12 col-md-4 d-flex justify-content-md-end justify-content-start mt-2 mt-md-0">
+			  <a href="https://www.facebook.com" target="_blank" class="me-3"><i class="bi bi-facebook"></i></a>
+			  <a href="https://www.twitter.com" target="_blank" class="me-3"><i class="bi bi-twitter"></i></a>
+			  <a href="https://www.linkedin.com" target="_blank" class="me-3"><i class="bi bi-linkedin"></i></a>
+			  <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+			</div> -->
+		
+	
+	  </div><!-- End of header -->
 
 
 
 
         <!-- Menu ___________________________________ -->
 
-        <div class="main_menu">
+		<div class="main_menu">
         	<div class="container">
         		<div class="logo float_left">
-        			<a href="index.html"><img src="images/logo/logo2.png" alt="logo" class="img-responsive"></a>
+        <a href="index.html"><img src="images/logo/logo.png" alt="logo" class="img-responsive" width="65%"></a>
         		</div> <!-- End of .logo -->
 
         		<nav class="navbar navbar-default float_left">
@@ -120,7 +330,21 @@
 				       <li class="dropdown"><a href="about.html">About Us</a>
 				       		<ul class="sub-menu">
 				       			<li><a href="company-history.html">Company History</a></li>
-				       			<li><a href="our-team.html">Our Team</a></li>
+				       			<li><a href="">Our Team
+
+
+
+									<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+										<ul class="sub-sub-menu">
+											<li><a href="management.html">Management</a></li>
+										 <!-- End of .sub-sub-menu -->
+										
+									
+											<li><a href="directors.html">Directors</a></li>
+										</ul>
+									<!-- End of .sub-sub-menu -->
+									</li>
+								</a></li>
 				       			<li><a href="our-partners.html">Our Clients</a></li>
 				       			<li><a href="faq.html">FAQ</a></li>
 				       			<li class="dropdown"><a >Our Companies<i class="fa fa-caret-right" aria-hidden="true"></i></a>
@@ -143,31 +367,28 @@
 				       			
 				       		</ul> <!-- End of .sub-menu -->
 				       </li>
-				       <li class="dropdown"><a href="#">News</a>
+				       <li class="dropdown"><a href="#">Resources</a>
 				       		<ul class="sub-menu">
-				       			<li><a href="blog-default.html">Default</a></li>
-				       			<li><a href="blog-grid.html">Grid Style Layout</a></li>
-				       			<li><a href="blog-grid-sidebar.html">Grid With Sidebar</a></li>
-				       			<li><a href="blog-list.html">List Layout</a></li>
-				       			<li><a href="blog-details.html">Single Detail</a></li>
+								<!-- <li><a href="blog-details.html">News</a></li> -->
+								<li><a href="project-filter.html">Photo Gallery</a></li>
+				       			<!-- <li><a href="blog-default.html">Default</a></li> -->
+				       			<li><a href="blog-grid.html">Blog</a></li>
+				       			<!-- <li><a href="blog-grid-sidebar.html">Grid With Sidebar</a></li> -->
+				       			<li><a href="blog-list.html">News</a></li>
+								   <li><a href="blog-details.html">Market Activities</a></li>
+				       		
 				       		</ul> <!-- End of .sub-menu -->
 				       </li>
-				       <li class="dropdown"><a href="#">Projects</a>
+				       <!-- <li class="dropdown"><a href="#">Media</a>
 				       		<ul class="sub-menu">
 				       			<li><a href="project-grid.html">Projects Grid</a></li>
 				       			<li><a href="project-filter.html">Projects Grid With Filter</a></li>
 				       			<li><a href="project-masonary.html">Projects Masonary</a></li>
 				       			<li><a href="project-single.html">Single Detail</a></li>
 				       		</ul>
-				       </li>
-				       <li class="dropdown"><a href="#">Shop</a>
-				       		<ul class="sub-menu">
-				       			<li><a href="shop.html">Default Shop</a></li>
-				       			<li><a href="shop-width-sidebar.html">Shop With Sidebar</a></li>
-				       			<li><a href="shop-single.html">Product Details</a></li>
-				       			<li><a href="shop-cart.html">Cart Page</a></li>
-				       			<li><a href="checkout.html">Checkout Page</a></li>
-				       		</ul>
+				       </li> -->
+				       <li class="dropdown"><a href="#">Products</a>
+				       	
 				       </li>
 				       <li><a href="contact.html">Contact Us</a></li>
 				     </ul>
@@ -182,78 +403,13 @@
 				   			<button class="s_color_bg p_color"><i class="fa fa-search" aria-hidden="true"></i></button>
 				   		</form>
 				   </div>
-
-				   <div class="cart_option float_left">
-				   		<button class="cart tran3s dropdown-toggle" id="cartDropdown"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="s_color_bg p_color">0</span></button>
-				   		<div class="cart_list p_color_bg" aria-labelledby="cartDropdown">
-				   			<ul>
-				   				<li>
-				   					<div class="cart_item_wrapper clear_fix">
-				   						<div class="img_holder float_left"><img src="images/home/cart1.jpg" alt="Cart Image" class="img-responsive"></div> <!-- End of .img_holder -->
-
-				   						<div class="item_deatils float_left">
-				   							<h6>Lords Of Strategy</h6>
-				   							<ul>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-											</ul>
-											<span class="font_fix">$ 34.99</span>
-				   						</div> <!-- End of .item_deatils -->
-				   					</div> <!-- End of .cart_item_wrapper -->
-				   				</li>
-
-				   				<li>
-				   					<div class="cart_item_wrapper clear_fix">
-				   						<div class="img_holder float_left"><img src="images/home/cart2.jpg" alt="Cart Image" class="img-responsive"></div> <!-- End of .img_holder -->
-				   						
-				   						<div class="item_deatils float_left">
-				   							<h6>Good To Great</h6>
-				   							<ul>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-											</ul>
-											<span class="font_fix">$ 26.99</span>
-				   						</div> <!-- End of .item_deatils -->
-				   					</div> <!-- End of .cart_item_wrapper -->
-				   				</li>
-
-				   				<li>
-				   					<div class="cart_item_wrapper clear_fix">
-				   						<div class="img_holder float_left"><img src="images/home/cart3.jpg" alt="Cart Image" class="img-responsive"></div> <!-- End of .img_holder -->
-				   						
-				   						<div class="item_deatils float_left">
-				   							<h6>Start From The Art</h6>
-				   							<ul>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-											</ul>
-											<span class="font_fix">$ 26.99</span>
-				   						</div> <!-- End of .item_deatils -->
-				   					</div> <!-- End of .cart_item_wrapper -->
-				   				</li>
-				   			</ul>
-
-				   			<div class="cart_total clear_fix">
-
-				   				<span class="total font_fix float_left">Total - 140$</span>
-				   				<a href="#" class="s_color_bg float_right tran3s">View Cart</a>
-				   			</div>
-				   		</div> <!-- End of .cart_list -->
-				   </div> <!-- End of .cart_option -->
+ <!-- End of .cart_option -->
 				   <div class="clear_fix"></div>
 				</div> <!-- End of .nav_right_area -->
 			<div class="clear_fix"></div>
         	</div> <!-- End of .container -->
         </div> <!-- End of .main_menu -->
+ <!-- End of .main_menu -->
 
 
         <!-- Inner Banner _____________________ -->
@@ -556,7 +712,7 @@
 
    				<div class="bottom_footer">
    					<div class="container">
-   						<p class="float_left font_fix">&copy; 2016 ConsultPress Theme Designed by <a href="http://themeforest.net/user/steelthemes/portfolio" target="_blank">Steelthemes</a></p>
+   						<p class="float_left font_fix">&copy; 2016 Apel Theme Designed by <a href="http://themeforest.net/user/steelthemes/portfolio" target="_blank">Steelthemes</a></p>
    						<ul class="float_right">
    							<li><a href="#" class="tran3s" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 			        		<li><a href="#" class="tran3s" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>

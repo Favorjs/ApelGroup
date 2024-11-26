@@ -3,7 +3,7 @@
 
 /**
 *****************************************
-@File: ConsultPress - Providing leading Business Solutions.
+@File: Apel - Providing leading Business Solutions.
 stylesheet created by : jubayer.hasan1991@gmail.com
 
 
@@ -23,7 +23,7 @@ This files contents are outlined below>>>>>
 * Banner Styles.
 * Request Quote Styles.
 * Company Excellence Styles.
-* About ConsultPress & Testimonial Styles.
+* About Apel & Testimonial Styles.
 * What Makes us Special Styles.
 * Why Choose Us Styles.
 * Our Team Styles.
@@ -801,8 +801,8 @@ header .header_right ul.social_icon li a {
   margin: 15px auto 23px auto;
 }
 
-/*================================== About ConsultPress & Testimonial ===========================*/
-.about_testimonial .about_ConsultPress p {
+/*================================== About Apel & Testimonial ===========================*/
+.about_testimonial .about_Apel p {
   margin-top:42px;
   animation: fadein linear;
   animation-duration: 2.5s;
@@ -1759,7 +1759,7 @@ footer .bottom_footer ul li a {
 /*=============================== Inner Banner =====================*/
 
 .inner_banner {
-  background: url(../../images/home/inner-banner.jpg) no-repeat center;
+  background: url(../../images/home/background_inner.jpg) no-repeat center;
   background-size: cover;
   text-align: center;
   height:258px;
