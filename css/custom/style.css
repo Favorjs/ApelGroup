@@ -726,9 +726,9 @@ header .header_right ul.social_icon li a {
 .company_excellance .container {
   border-bottom: 2px solid #f4f4f4;
   
-  animation: fadein linear;
+  /* animation: fadein linear;
   animation-duration: 2.5s;
-  animation-timeline: view();
+  animation-timeline: view(); */
 }
   
   .company_excellance .text{
