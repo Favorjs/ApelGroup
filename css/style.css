@@ -930,7 +930,7 @@ preloader
 .mil-preloader {
   width: 100vw;
   height: 100vh;
-  background-color: rgb(13, 81, 82);
+  background-color: #107b5f;
   position: fixed;
   z-index: 999;
   top: 0;
@@ -1026,6 +1026,11 @@ back to top
 top panel
 
 ------------------------------------------- */
+
+
+
+
+
 .mil-top-panel {
   position: fixed;
   z-index: 998;
@@ -1043,11 +1048,25 @@ top panel
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+
+  
 }
+
+@media (max-width: 768px) {
+  .mil-top-panel .container {
+    flex-direction: row; /* Stacks elements vertically on small screens */
+    text-align: center; /* Centers content */
+    height: auto;
+  }
+}
+
+
+
 .mil-top-panel .mil-menu-buttons {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  
   
   
 }
@@ -1059,8 +1078,9 @@ top panel
 @media (max-width: 1200px) {
   .mil-top-panel {
     height: 80px;
-    /* background-color: rgb(255, 255, 255); */
+     background-color: rgb(255, 255, 255); 
   }
+
   .mil-top-panel.mil-active {
     height: 80px;
   }
@@ -1073,6 +1093,7 @@ top menu
 ------------------------------------------- */
 .mil-top-menu ul {
   display: flex;
+  
 }
 .mil-top-menu ul li {
   list-style-type: none;
@@ -1214,6 +1235,9 @@ top menu
   opacity: 0.7;
   font-weight: 700;
 }
+
+
+
 .mil-dark-2 .mil-top-menu ul li.mil-active a {
   color: #8abf42;
   opacity: 1;
@@ -1262,6 +1286,7 @@ top menu
     box-shadow: 0 5px 5px rgba(13, 81, 82, 0.1);
     padding: 0 0 15px 0;
     transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+
   }
   .mil-top-menu.mil-active {
     pointer-events: all;
@@ -1385,7 +1410,7 @@ menu button
 }
 
 .mil-dark-2 .mil-menu-btn {
-  background-color: rgb(27, 23, 23);
+  background-color: white;
 }
 .mil-dark-2 .mil-menu-btn span, .mil-dark-2 .mil-menu-btn span:after, .mil-dark-2 .mil-menu-btn span:before {
   background-color: rgb(13, 81, 82);
@@ -1444,7 +1469,7 @@ banner
   }
 }
 .mil-banner.mil-banner-inner {
-  height: auto;
+  height: 400px;
   background-color: transparent;
   min-height: 480px;
   padding-top: 80px;
@@ -2983,25 +3008,29 @@ Second Apel Group */
 /* For tablets and small screens */
 @media (max-width: 768px) {
   .navigation-bar {
-      justify-content: center; /* Center items */
+      display: flex;
+      flex-wrap: wrap; /* Allows items to wrap */
+      justify-content: center;
+      gap: 10px; /* Adds spacing between items */
   }
   .nav-item {
-      width: 80px; /* Reduce item size */
+      width: calc(50% - 10px); /* Two items per row */
+      max-width: 100px; /* Limits item width */
       padding: 10px;
+      text-align: center;
   }
   .nav-item i {
-      font-size: 20px; /* Reduce icon size */
+      font-size: 18px; /* Slightly smaller icon */
   }
   .nav-item span {
-      font-size: 12px; /* Reduce text size */
+      font-size: 12px;
   }
 }
 
-/* For very small screens (mobile) */
+/* For very small screens (≤ 480px), stack items one per row */
 @media (max-width: 480px) {
   .nav-item {
-      width: 100%; /* Stack items */
-      text-align: center;
+      width: 100%; /* Full width (one item per row) */
   }
   .nav-item span {
       font-size: 14px;
@@ -3977,8 +4006,10 @@ box-shadow: none;
   position: relative;
   width: 300px; /* Adjust as needed */
   border-radius: 30px;
-
- 
+  height: auto;
+  max-height: 300px; /* Adjust as needed */
+  overflow: hidden; /* Ensures content doesn't overflow if it exceeds max-height */
+ margin-bottom: 50px;
 }
 
 
