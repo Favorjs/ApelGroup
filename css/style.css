@@ -2058,6 +2058,9 @@ icon box
   
   flex-direction: column;
 }
+
+
+
 .mil-icon-box img {
   display: block;
   width: 60px;
@@ -2075,6 +2078,8 @@ icon box
   background-color:  #FFF ;
 
 }
+
+
 .mil-icon-box.mil-bg-fix {
   padding: 60px 30px;
 }
@@ -2101,7 +2106,7 @@ icon box
     height: auto;
   }
   .mil-icon-box.mil-hover {
-    background-color: rgb(13, 81, 82);
+    background-color: white;
   }
   .mil-icon-box.mil-hover h5 {
     color: rgb(13, 81, 82);
@@ -2929,7 +2934,7 @@ Second Apel Group */
   justify-content: center;
   padding: 15px 10px;
   background-color: #fff;
-  border: 1px solid #ddd;
+
   border-radius: 6px;
   width: 150px;
   cursor: pointer;
@@ -3006,34 +3011,38 @@ Second Apel Group */
 /* Media Queries for Responsiveness */
 
 /* For tablets and small screens */
+
+
+
+
 @media (max-width: 768px) {
   .navigation-bar {
-      display: flex;
-      flex-wrap: wrap; /* Allows items to wrap */
-      justify-content: center;
-      gap: 10px; /* Adds spacing between items */
+      justify-content: center; /* Keep items centered */
+
   }
   .nav-item {
-      width: calc(50% - 10px); /* Two items per row */
-      max-width: 100px; /* Limits item width */
-      padding: 10px;
-      text-align: center;
+      width: 80px; /* Reduce item width */
+      padding: 8px; /* Adjust padding */
   }
   .nav-item i {
-      font-size: 18px; /* Slightly smaller icon */
+      font-size: 25px; /* Reduce icon size */
   }
   .nav-item span {
-      font-size: 12px;
+      font-size: 9px; /* Reduce text size */
   }
 }
 
-/* For very small screens (≤ 480px), stack items one per row */
+/* For very small screens (≤ 480px) */
 @media (max-width: 480px) {
   .nav-item {
-      width: 100%; /* Full width (one item per row) */
+      width: 80px; /* Further reduce item width */
+      padding: 6px; /* Adjust padding */
+  }
+  .nav-item i {
+      font-size: 16px; /* Even smaller icon */
   }
   .nav-item span {
-      font-size: 14px;
+      font-size: 8px; /* Even smaller text */
   }
 }
 
@@ -3057,8 +3066,10 @@ Second Apel Group */
   
   display: flex;
   margin: auto;
+
     }
   
+    
     .businessCard{
   height:100%;
   width: 20%;
