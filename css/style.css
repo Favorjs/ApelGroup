@@ -2802,7 +2802,7 @@ footer .mil-footer-bottom {
   border-top: solid 1px rgba(137, 141, 150, 0.2);
 }
 footer.mil-footer-with-bg {
-  background-color: rgb(13, 81, 82);
+  background-color: rgb(242, 250, 250);
 }
 footer.mil-footer-with-bg .mil-footer-bottom {
   border-top: solid 1px rgba(137, 141, 150, 0.2);
@@ -3014,139 +3014,151 @@ Second Apel Group */
 
 
 
-
+/* Make Each Section Circular in Mobile View */
 @media (max-width: 768px) {
   .navigation-bar {
-      justify-content: center; /* Keep items centered */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
 
-  }
   .nav-item {
-      width: 80px; /* Reduce item width */
-      padding: 8px; /* Adjust padding */
+    width: 120px; /* Circular width */
+    height: 120px; /* Circular height */
+    border-radius: 50%; /* Makes it fully round */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds depth */
+    text-align: center;
+    padding: 10px;
+    overflow: hidden;
   }
-  .nav-item i {
-      font-size: 25px; /* Reduce icon size */
+
+  .nav-item img {
+    width: 40px; /* Adjust icon size */
+    height: 40px;
+    margin-bottom: 5px;
   }
+
   .nav-item span {
-      font-size: 9px; /* Reduce text size */
+    font-size: 12px; /* Adjust text size */
+    font-weight: bold;
+    color: #333;
+    text-align: center;
   }
 }
 
-/* For very small screens (≤ 480px) */
+/* For Very Small Screens (Phones ≤ 480px) */
 @media (max-width: 480px) {
   .nav-item {
-      width: 80px; /* Further reduce item width */
-      padding: 6px; /* Adjust padding */
+    width: 90px;
+    height: 90px;
   }
-  .nav-item i {
-      font-size: 16px; /* Even smaller icon */
+
+  .nav-item img {
+    width: 30px;
+    height: 30px;
   }
+
   .nav-item span {
-      font-size: 8px; /* Even smaller text */
+    font-size: 10px;
+  }
+  
+}
+
+.ourBusiness {
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+  place-content: center;
+}
+
+.ourBusinessContent {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  gap: 10px; /* Space between cards */
+  margin: auto;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  flex-wrap: nowrap; /* Prevents wrapping */
+
+  padding-bottom: 10px; /* Prevents scrollbar overlap */
+}
+
+
+.ourBusinessContent::-webkit-scrollbar {
+  display: none; /* Hides scrollbar for Chrome, Safari, Edge */
+}
+
+
+
+.ourBusinessContent::-webkit-scrollbar-thumb {
+  background: #ccc; /* Subtle scrollbar color */
+  border-radius: 4px;
+}
+
+.businessCard {
+  flex: 0 0 auto; /* Prevents resizing */
+  width: 20%; /* Default width for larger screens */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.businessCard span {
+  font-size: 2.5em;
+  color: #8ABF42;
+  
+ 
+
+}
+
+.businessCard p {
+  font-size: 1.1em;
+}
+
+/* Responsive for tablets (≤ 768px) */
+@media (max-width: 768px) {
+  .ourBusinessContent {
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row; /* Keeps items in a row */
+    white-space: nowrap; /* Prevents text wrapping */
+    padding: 0 10px;
+  }
+
+  .businessCard {
+    width: 45%; /* Slightly larger cards for readability */
+    min-width: 150px; /* Ensures all cards are visible */
+    margin: 0 5px; /* Adds space between cards */
   }
 }
 
-.ourBusiness{
+/* Responsive for mobile (≤ 480px) */
+@media (max-width: 480px) {
+  .ourBusinessContent {
+    padding: 0 5px;
+    scroll-snap-type: x mandatory; /* Smooth horizontal scroll */
+  }
 
-  width:100%;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-  place-content: center;
+  .businessCard {
+    width: 60%; /* Larger cards for readability */
+    min-width: 130px;
+    margin: 0 5px;
+    scroll-snap-align: center; /* Snap effect */
+  }
+}
 
-  text-align: center;
-  
-  
-  
-  
-    }
-    .ourBusinessContent{
-  
-  width:90%;
-  height: 80%;
-  
-  display: flex;
-  margin: auto;
 
-    }
-  
-    
-    .businessCard{
-  height:100%;
-  width: 20%;
-  
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  span{
-    font-size: 3em;
-    color: #267F34;
-    
-  }
-  p{
-    font-size: 1.1em;
-  
-  }
-  
-  
-    }
-    
-    @keyframes animateIconLine {
-    0% {
-      transform: scaleX(0);
-    }
-    100% {
-      transform: scaleX(1);
-    }
-  }
-  
-  .businessCard:hover .iconLine {
-    height: .5vh;
-    background-color: #267F34;
-    animation: animateIconLine 0.5s ease-in-out;
-    
-  }
-  
-  .iconLine::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 5%;
-    background-color: #267F34;
-  }
-  
-  .iconLine::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 5%;
-    background-color: #8ABF42;
-  }
-  
-  .businessCard:hover div {
-  margin-bottom: 0.5rem;
-  }
-  
-  .businessHeader{
-    margin: auto;
-  width:30%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 2rem;
-  
-  
-  }
-  
-  
-  
-  .stubbornLine{
+
+.stubbornLine{
   
   height:.8vh;
   width:10vh;
@@ -3154,27 +3166,48 @@ Second Apel Group */
   margin-top: 0.8rem;
   
   }
-  @media (max-width: 768px) {
-              .ourBusinessContent{
-              
-              display: flex;
-              flex-direction: column;
-              
-              align-items: center;
-              
-              }
-              .businessCard{
-  
-              margin-top: 1rem;
-              
-              }
-              .ourBusiness{
-  
-              padding-top: 1rem;
-              padding-bottom: 1rem;
-              }
-  
+
+        @keyframes animateIconLine {
+          0% {
+            transform: scaleX(0);
+          }
+          100% {
+            transform: scaleX(1);
+          }
         }
+        
+        .businessCard:hover .iconLine {
+          height: .5vh;
+          background-color: #267F34;
+          animation: animateIconLine 0.5s ease-in-out;
+          
+        }
+        
+        .iconLine::before {
+          content: "";
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 0;
+          height: 5%;
+          background-color: #267F34;
+        }
+        
+        .iconLine::after {
+          content: "";
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 0;
+          height: 5%;
+          background-color: #8ABF42;
+        }
+        
+        .businessCard:hover div {
+        margin-bottom: 0.5rem;
+        }
+
+
 
         .mil-bannerindex {
           position: relative;
@@ -4018,8 +4051,8 @@ box-shadow: none;
   width: 300px; /* Adjust as needed */
   border-radius: 30px;
   height: auto;
-  max-height: 300px; /* Adjust as needed */
-  overflow: hidden; /* Ensures content doesn't overflow if it exceeds max-height */
+
+
  margin-bottom: 50px;
 }
 
@@ -4036,6 +4069,9 @@ box-shadow: none;
   overflow: hidden;
   transition: transform 0.3s;
   border: none;
+  max-height: 300px; /* Adjust as needed */
+  overflow: hidden; /* Ensures content doesn't overflow if it exceeds max-height */
+  border-radius: 40px;
 }
 
 .image-container:hover {
@@ -4099,7 +4135,7 @@ box-shadow: none;
   }
 
   .gallery-item {
-      width: 100%; /* Full width on small screens */
+      width: 70%; /* Full width on small screens */
   }
 }
 
@@ -4137,3 +4173,64 @@ box-shadow: none;
       height: 300px; /* Adjust height for mobile devices */
   }
 }
+
+
+/* each banner overlay */
+/* Add to your CSS file */
+
+.social-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 icons per row by default */
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 150px;
+  margin-left: 0px;
+  padding: 50px 0 !important;
+
+  
+}
+.social-icons a {
+  text-decoration: none;
+  font-size: 23px; /* Icon size */
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+.social-icons a:hover {
+  color: #00ff4c;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .social-icons {
+      grid-template-columns: repeat(3, minmax(60px, 1fr)); /* 3 equal columns */
+      max-width: 240px; /* 3 x 80px */
+      margin: 0 auto;
+      padding: 20px 0 !important;
+      gap: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .mil-footer-with-bg {
+      padding: 80px 20px; /* Adjust padding for smaller screens */
+      text-align: center; /* Centers inline content like text or icons */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 160px 0; /* Keeps existing padding */
+  }
+}
+
+.mil-footer-logo {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto; /* Added for extra centering assurance */
+
+}
+
