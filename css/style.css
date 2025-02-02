@@ -98,12 +98,7 @@ main
 }
 
 /* Adjust the navigation panel */
-.mil-top-panel {
- position: fixed;
-  margin-top: 50px; /* Adjust this based on the preheader's height */
 
-
-}
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
@@ -120,9 +115,7 @@ main
       margin-left: 5px;
   }
 
-  .mil-top-panel {
-      margin-top: 70px; /* Adjust for mobile screens if preheader height increases */
-  }
+ 
 }
 
 
@@ -1425,7 +1418,7 @@ banner
   position: relative;
   overflow: hidden;
   background-color: rgb(13, 81, 82);
-  height: 100vh;
+  height: 150vh;
   min-height: 900px;
   display: flex;
   align-items: center;
@@ -3211,7 +3204,7 @@ Second Apel Group */
 
         .mil-bannerindex {
           position: relative;
-          height: 93vh;
+          height: 100vh;
           overflow: hidden;
       }
       
@@ -4016,6 +4009,17 @@ box-shadow: none;
   margin: 20px 0;
 }
 
+
+
+@media (max-width: 768px) {
+  .button-container {
+    flex-direction: row;
+    align-items: center;
+   
+  }
+}
+
+
 .gallery-button {
   background-color: transparent;
   border: none;
@@ -4028,6 +4032,14 @@ box-shadow: none;
   max-width: 200px; /* Set a maximum width for larger screens */
   text-align: center; /* Center text */
 }
+
+@media (max-width: 768px) {
+  .gallery-button {
+ max-width: 170px;
+   
+  }
+}
+
 
 .gallery-button.active {
   background-color: rgb(13, 81, 82); /* Change to your desired color */
@@ -4132,7 +4144,9 @@ box-shadow: none;
   .gallery-button {
       font-size: 14px; /* Smaller font size on small screens */
       padding: 8px 16px; /* Smaller padding */
+      
   }
+
 
   .gallery-item {
       width: 70%; /* Full width on small screens */
@@ -4233,4 +4247,82 @@ box-shadow: none;
   margin: 0 auto; /* Added for extra centering assurance */
 
 }
+.company-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px 15px;
+  gap: 15px;
+  margin-top: -270px;
+}
 
+.company {
+  flex: 1 1 200px;
+  min-height: 250px;
+  padding: 15px;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  background-size: cover;
+  background-position: center;
+
+  overflow: hidden;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.company::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.company:hover {
+  transform: scale(1.03);
+}
+
+.company h3 {
+  position: relative;
+  z-index: 2;
+  color: #fff !important;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .company-section {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+  
+  .company {
+    width: 100%;
+    flex: 1 1 auto;
+    min-height: 120px;
+    margin: 8px 0;
+    padding: 20px;
+  }
+  
+  .company h3 {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .company h3 {
+    font-size: 1rem;
+  }
+}
