@@ -230,6 +230,16 @@ $(function () {
     $('.mil-menu-btn').on('click', function () {
         $('.mil-menu-btn , .mil-top-menu').toggleClass('mil-active');
     });
+
+
+
+
+
+
+    
+    $('.mil-menu-btn').on('click', function () {
+        $('.mil-menu-btn , .mil-top-menu-index').toggleClass('mil-active');
+    });
     /***************************
 
     top panel scroll animation
