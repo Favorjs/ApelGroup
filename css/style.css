@@ -3756,7 +3756,7 @@ color:#8abf42;
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
-  align-items: center;
+
 
 }
 
@@ -3800,6 +3800,13 @@ color:#8abf42;
   font-size: 14px;
   color: #555;
   margin-top: 10px;
+}
+
+.single_mission li {
+  font-size: 14px;
+  color: #555;
+  margin-top: 5px;
+  list-style-type: none;
 }
 
 
